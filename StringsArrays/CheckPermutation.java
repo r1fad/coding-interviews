@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class checkPermutation{
+public class CheckPermutation{
 
   public static boolean isPermutation(String str1, String str2){
 
