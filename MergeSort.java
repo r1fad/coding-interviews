@@ -62,7 +62,7 @@ public class MergeSort{
 			k++;
 		}
 
-    // copy any remaining elements from right half into resultant 
+    // copy any remaining elements from right half into resultant
 		while(j<rightSize) {
 			resultArray[k] = right[j];
 			j++;
