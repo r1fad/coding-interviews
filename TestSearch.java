@@ -1,6 +1,4 @@
-import sorts.MergeSort;
 import java.util.Arrays;
-
 
 public class TestSearch{
 
