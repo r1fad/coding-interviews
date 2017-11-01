@@ -4,20 +4,19 @@ public class checkPermutation{
 
   public static boolean isPermutation(String str1, String str2){
 
-     char[] charArray1 = str1.toCharArray();
-     char[] charArray2 = str2.toCharArray();
+     if (str1.length() != str2.length()) return false;
 
-     Arrays.sort(charArray1);
-     Arrays.sort(charArray2);
+     int[] letters = new int[128];
+     for (int i=0; i<str1.length(); i++)
+       letters[str1.charAt(i)]++;
 
-     String newStr1 = new String(charArray1);
-     String newStr2 = new String(charArray2);
+     for (int j=0; j<str2.length(); j++){
+       letters[str2.charAt(j)]--;
+       if (letters[str2.charAt(j)] < 0)
+        return false;
+     }
 
-     if (newStr1.equals(newStr2))
-      return true;
-     else
-      return false;
-
+     return true;
   }
 
   public static void main(String[] args){
