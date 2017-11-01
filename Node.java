@@ -4,6 +4,7 @@ public class Node{
 
   public Node(int val){
     value = val;
+    next = null;
   }
 
   public void append(Node node){
